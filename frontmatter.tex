@@ -1,0 +1,184 @@
+%Frontmatter
+
+\title{Seismogeodesy and Rapid Earthquake and Tsunami Source Assessment}
+
+\author{Diego Melgar Moctezuma}
+\degreeyear{2014}
+\degreetitle{Doctor of Philosophy} 
+\field{Earth Science}
+\chair{Yehuda Bock}
+%  The rest of the committee members  must be alphabetized by last name.
+\othermembers{
+T. Guy Masters\\ 
+David T. Sandwell\\
+Peter M. Shearer\\
+Jose I. Restrepo\\
+}
+\numberofmembers{5} % |chair| + |cochair| + |othermembers|
+
+
+%% START THE FRONTMATTER
+%
+\begin{frontmatter}
+
+%% TITLE PAGES
+%
+%  This command generates the title, copyright, and signature pages.
+%
+\makefrontmatter 
+
+%% DEDICATION
+%
+%  You have three choices here:
+%    1. Use the ``dedication'' environment. 
+%       Put in the text you want, and everything will be formated for 
+%       you. You'll get a perfectly respectable dedication page.
+%   
+%
+%    2. Use the ``mydedication'' environment.  If you don't like the
+%       formatting of option 1, use this environment and format things
+%       however you wish.
+%
+%    3. If you don't want a dedication, it's not required.
+%
+%
+\begin{dedication} 
+  To my family.
+\end{dedication}
+
+
+% \begin{mydedication} % You are responsible for formatting here.
+%   \vspace{1in}
+%   \begin{flushleft}
+% 	To me.
+%   \end{flushleft}
+%   
+%   \vspace{2in}
+%   \begin{center}
+% 	And you.
+%   \end{center}
+% 
+%   \vspace{2in}
+%   \begin{flushright}
+% 	Which equals us.
+%   \end{flushright}
+% \end{mydedication}
+
+
+
+%% EPIGRAPH
+%
+%  The same choices that applied to the dedication apply here.
+%
+%\begin{epigraph} % The style file will position the text for you.
+%
+%  ---Karl Popper, \emph{Conjectures and Refutations}
+%\end{epigraph}
+
+ \begin{myepigraph} % You position the text yourself.
+ \vfil
+\noindent
+\emph{Every solution of a problem raises new unsolved problems; the more so the deeper the original problem and the bolder its solution. The more we learn about the world, and the deeper our learning, the more conscious, specific, and articulate will be our knowledge of what we do not know, our knowledge of our ignorance. For this, indeed, is the main source of our ignorance -- the fact that our knowledge can be only finite, while our ignorance must necessarily be infinite.}
+ \vspace{10mm}
+ 
+ 
+\begin{raggedright}
+\hfill --- \emph{Karl R. Popper}, Conjectures and Refutations
+\end{raggedright}
+ \end{myepigraph}
+
+
+%% SETUP THE TABLE OF CONTENTS
+%
+\tableofcontents
+\listoffigures  % Uncomment if you have any figures
+\listoftables   % Uncomment if you have any tables
+
+
+
+%% ACKNOWLEDGEMENTS
+%
+%  While technically optional, you probably have someone to thank.
+%  Also, a paragraph acknowledging all coauthors and publishers (if
+%  you have any) is required in the acknowledgements page and as the
+%  last paragraph of text at the end of each respective chapter. See
+%  the OGS Formatting Manual for more information.
+%
+\begin{acknowledgements}
+I am indebted to all those who have been my teachers, it is the noblest endeavor to devote ones time to sharing knowledge. I am grateful for your patience and dedication. Especially to Xyoli P\'erez Campos who first introduced me to seismology, our time working in the field and in the lab were the gateway drug for everything that followed. My Ph.D. advisor Yehuda Bock, you have mentored me in very single aspect of the craft of science and prepared me for the times ahead, I will remember our time together fondly. My dissertation committee, Guy Masters, Jose Restrepo, Peter Shearer and Dave Sandwell have alway had open doors and have been ready to help me out.
+
+The dedicated staff of the Scripps Orbital and Permanent Array Center have been instrumental in my research, they keep the shop running, Maria Turingan, Mindy Squibb, Anne Sullivan, Peng Fang and Glen Offield are often times the secret to our success.
+
+I am grateful for the opportunity to have conducted my research at the Scripps Institution of Oceanography and in particular at the Institute of Geophysics and Planetary Physics. It may not have been apparent at the time to those who had the most insignificant of conversations, over a cup of coffee or a beer at TG with me, but our interactions have many times allowed me to push through a problem.
+
+The Ph.D. has been the best time of my life and this is in no small part thanks to my wonderful friends and companions in the trenches. Robert Petersen, Michael Deflorio, Alain DeVerneil, Riley Gannon, Samer Naif, Elizabeth Vu, Alan Foreman, Fernando Paolo, Soli Garcia, Scott DeWolf, Brendan Crowell, Andy Barbour and everyone at SIO whom I can rely on every Friday to help me unwind and enjoy life hoping for a green flash.
+
+Valerie you have been my confidant, partner in crime and my best friend, always ready for anything and yearning for bigger and better things. I've never met a person as full of life as you. Here's to hoping for many more reckless adventures in the times ahead.
+
+I'd be nothing without the love of my family who have been there with me and for me through the good times and the hard times. Daniela, big sister, I am grateful for your unconditional love and support. To my parents I owe the largest debt of all, you taught me to love knowledge and encouraged me to be curious about the world, to ask questions and never dogmatically accept anything that could not be critically evaluated. Your unrelenting love and support have allowed me to pursue a career in science. I am here because of you.
+
+Some formalities: portions of this dissertation have been published in peer reviewed journals. Except for the discussion of accelerometer biases in Kalman filtering, Chapter 2 is published in its entirety in:
+\begin{itemize}
+\item \textbf{Melgar, D.}, Bock, Y., Sanchez, D., and Crowell, B.W., ``On Robust and Reliable Automated Baseline Corrections for Strong Motion Seismology'', \emph{J. Geophys. Res.}, 118(3), 2013.
+\item Bock, Y., \textbf{Melgar, D.}, and Crowell, B.W., ``Real-Time Strong-Motion Broadband Displacements from Collocated GPS and Accelerometers'', \emph{Bull. Seism. Soc. Am.}, 101(6), 2011.
+\end{itemize}
+Chapter 3 has been published in:
+\begin{itemize}
+\item \textbf{Melgar, D.}, Crowell, B.W., Bock, Y., and Haase, J.S, ``Rapid modeling of the 2011 Mw 9.0 Tohoku-oki earthquake with seismogeodesy'', \emph{Geophys. Res. Lett}, 40(12), 2013.
+\item \textbf{Melgar, D.}, Bock, Y., and Crowell, B.W., ``Real-Time Centroid Moment Tensor Determination for Large Earthquakes from Local and Regional Displacement Records'', \emph{Geophys. J. Int.}, 188(2), 2012.
+\end{itemize}
+Chapter 4 consists of previously unpublished material. Sections 5.1 through 5.4 of Chapter 5 have been published in
+\begin{itemize}
+\item \textbf{Melgar, D.} and Bock, Y. ``Near-Field Tsunami Models with Rapid Earthquake Source Inversions from Land- and Ocean-Based Observations: The Potential for Forecast and Warning'', \emph{J. Geophys. Res.}, 118(11), 2013.
+\end{itemize}
+and relies heavily on code modified from its original form as it appeared for the publication
+\begin{itemize}
+\item Crowell, B.W., Bock, Y., and \textbf{Melgar, D.}, ``Real-time inversion of GPS data for finite fault modeling and rapid hazard assessment'', \emph{Geophys. Res. Lett}, 39(9), 2012.
+\end{itemize}
+the remainder is unpublished material. I have had the privilege to co-author these and other papers with a talented ensemble of scientists. I am indebted to them for lively and uplifting debates.
+
+
+\end{acknowledgements}
+
+
+%% VITA
+%
+%  A brief vita is required in a doctoral thesis. See the OGS
+%  Formatting Manual for more information.
+%
+\begin{vitapage}
+\begin{vita}
+  \item[2009] B.Eng. in Geophysics, Universidad Nacional Aut\'onoma de M\'exico
+  \item[2010] M.Sc. in Earth Science University of California, San Diego
+  \item[2014] Ph.D. in Earth Science, University of California, San Diego 
+\end{vita}
+\begin{publications}
+\item Crowell, B.W., \textbf{Melgar, D.}, Bock, Y., Haase, J.S, and Geng, J., ``Earthquake Magnitude Scaling using Seismogeodetic Data'', \emph{Geophys. Res. Lett}, 40(23), 2013.
+\item \textbf{Melgar, D.} and Bock, Y. ``Near-Field Tsunami Models with Rapid Earthquake Source Inversions from Land- and Ocean-Based Observations: The Potential for Forecast and Warning'', \emph{J. Geophys. Res.}, 118(11), 2013.
+\item Geng, J., \textbf{Melgar, D.}, Bock, Y., Pantoli, E., and Restrepo, J.I., ``Recovering coseismic point ground tilts from collocated high-rate GPS and accelerometers'', \emph{Geophys. Res. Lett}, 40(19), 2013.
+\item \textbf{Melgar, D.}, Pantoli, E., Bock, Y., and Restrepo, J.I., ``Displacement Acquisition for the NEESR:BNCS Building Shaketable Test via GPS Sensors'', \emph{Network for Earthquake Engineering Simulation (distributor)}, DOI:10.4231/D3V97ZR5H, 2013.
+\item \textbf{Melgar, D.}, Crowell, B.W., Bock, Y., and Haase, J.S, ``Rapid modeling of the 2011 Mw 9.0 Tohoku-oki earthquake with seismogeodesy'', \emph{Geophys. Res. Lett}, 40(12), 2013.
+\item Geng, J., Bock, Y., \textbf{Melgar, D.}, Crowell, B.W., and Haase, J.S, ``A new seismogeodetic approach applied to GPS and accelerometer observations of the 2012 Brawley seismic swarm: Implications for earthquake early warning'', \emph{Geochem. Geophys. Geosyst}, 14(7), 2013.
+\item \textbf{Melgar, D.}, Bock, Y., Sanchez, D., and Crowell, B.W., ``On Robust and Reliable Automated Baseline Corrections for Strong Motion Seismology'', \emph{J. Geophys. Res.}, 118(3), 2013.
+\item Perez-Campos, X., \textbf{Melgar, D.}, Singh, S.K., Cruz-Atienza, V., Iglesias, A., and Hjorleifsdottir, V., ``Determination of tsunamigenic potential of a scenario earthquake in the Guerrero seismic gap along the Mexican subduction zone'', \emph{Seism. Res. Lett}, 84(3), 2013.
+\item Crowell, B.W., Bock, Y., and \textbf{Melgar, D.}, ``Real-time inversion of GPS data for finite fault modeling and rapid hazard assessment'', \emph{Geophys. Res. Lett}, 39(9), 2012.
+\item Singh, S.K., Perez-Campos, X., Iglesias, A., \textbf{Melgar, D.}, ``A Method for Rapid Estimation of Moment Magnitude for Early Tsunami Warning Based on Coastal GPS Networks'', \emph{Seism. Res. Lett}, 83(3), 2012.
+\item \textbf{Melgar, D.}, Bock, Y., and Crowell, B.W., ``Real-Time Centroid Moment Tensor Determination for Large Earthquakes from Local and Regional Displacement Records'', \emph{Geophys. J. Int.}, 188(2), 2012.
+\item Bock, Y., \textbf{Melgar, D.}, and Crowell, B.W., ``Real-Time Strong-Motion Broadband Displacements from Collocated GPS and Accelerometers'', \emph{Bull. Seism. Soc. Am.}, 101(6), 2011.
+\item \textbf{Melgar, D.} and Perez-Campos, X., ``Imaging the Moho and Subducted Oceanic Crust at the Isthmus of Tehuantepec, Mexico, from Receiver Functions'', \emph{Pure Appl. Geophysics}, 168, 2010.
+
+\end{publications}
+\end{vitapage}
+
+
+%% ABSTRACT
+%
+%  Doctoral dissertation abstracts should not exceed 350 words. 
+%   The abstract may continue to a second page if necessary.
+%
+\begin{abstract}
+  This dissertation will be abstract. 
+\end{abstract}
+
+
+\end{frontmatter}

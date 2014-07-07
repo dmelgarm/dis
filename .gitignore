@@ -1,0 +1,16 @@
+dissertation.pdf
+dissertation_06232014_yb_throughChapter4.pdf
+figures/ch4/tiles_small.pdf
+figures/ch4/tiles_disp_small.pdf
+figures/ch4/tiles_dvt_small.pdf
+figures/ch5/tiles_dvt_small.pdf
+ybl.*
+*.gz
+.DS_Store
+*.bbl
+*.blg
+*.aux
+*.lof
+*.log
+*.lot
+*.toc
