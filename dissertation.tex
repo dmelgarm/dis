@@ -8,6 +8,7 @@
 \usepackage{adjustbox}
 \usepackage{wrapfig}
 \usepackage{lscape}
+%\usepackage[nottoc,numbib]{tocbibind}
 \usepackage{rotating}
 \usepackage{placeins}
 \usepackage{afterpage}
@@ -20,6 +21,7 @@
 \let\NAT@up\itshape
 \makeatother
 %%%%%%%%
+\renewcommand{\bibsection}{\chapter{\bibname}}
 
 \begin{document}
 \include{frontmatter}
