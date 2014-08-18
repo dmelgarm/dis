@@ -51,6 +51,7 @@ The real-time combination of strong motion and GPS data via a multi-rate Kalman 
 As time progresses data from coastal and offshore wave gauges begin to accrue and are incrementally ingested into the inversion process. We employ data from 8 coastal tide gauges, 6 off-shore GPS buoys and 2 ocean bottom pressure (OPB) sensors for a total of 16 wave gauges (Table \ref{tb_wave_stations}, Figure \ref{fig_maps}). The data for all stations are resampled at 15 s. To compute the tGFs we calculate the seafloor deformation for 1 m of thrust and 1 m of strike-slip motion at each one of the subfaults. We then compute the resulting tsunami waveform at each one of the 16 wave gauges from this unit amount of slip using the open source GeoClaw software (www.clawpack.org). These time series of sea-surface motion are what we consider the tsunami Green functions for every subfault wave gauge pair.
 
 \begin{table}
+\centering
 \caption[Stations used in the inversion]{Wave gauges used in the inversion. All the time series are resampled to 15 s. The agencies responsible for the stations are the Earthquake Research Institute (ERI), the Nationwide Ocean Wave information network (NOW) and the Japan Meteorological Agency (JMA).}
 \label{tb_wave_stations}
 \begin{tabular}{l l l r r r r}
@@ -135,6 +136,7 @@ The results of the inversions at the 6 time intervals are summarized in Figures 
 \end{figure}
 
 \begin{table}
+\centering
 \caption[Inversion statistics]{Statistics of the inversions and inundation models. The first column is variance reduction (VR) between the coseismic offset measurements and the synthetic offsets from the inversion. The second column is RMS of the fit to the wave gauge measurements. The third column is variance reduction of the modeled inundation compared to the surveyed inundation from \citet{mori2012}. The 4th column is the number of inundation survey points inundated by the model}
 \label{tb_results}
 \begin{tabular}{l c c c c}
@@ -275,7 +277,7 @@ As before we can also study the individual subfault source time functions (Figur
 Up dip the behavior in the joint model is different from the model in Chapter 4 (Figure \ref{fig_tiles}). As we noted in the total slip distribution from Figure \ref{fig_dvt_results}b moment release north of the hypocenter is smaller. More importantly the source time functions are significantly longer for the shallowest 2 rows of subfaults and north of the hypocenter (along strike indices 5-9). In the preferred model from Chapter 4 those shallow source functions had durations of the order of 50s, while in the joint inversion here the STFs can be as long as 100s, essentially occupying the entire allowed duration. South of the hypocenter on the shallow subfaults duration of the STFs does not increase as much, but there is a second pulse of slip in the subfaults with largest moment release (along-strike indices 10-12) whose amplitude is larger than in the preferred model of Chapter 4. Overall, the effect of including the tsunami data is to produce a more pronounced pattern of shallow slip, to shift more of the moment release to the southern half of the slab model and to produce longer duration STFs on the shallowest subfaults.
 
 \begin{sidewaysfigure}[p]
-    \includegraphics[width=22cm,height=14cm]{./figures/ch5/tiles_dvt_small.png}
+    \includegraphics[width=21cm,height=12.5cm]{./figures/ch5/tiles_dvt_small.png}
     \caption[Subfault source-time functions]{Subfault source-time functions (STFs). The 90\% confidence intervals are indicated by the white line and the solid grey hatched area. The coloring under the STFs represents the pseudo rupture velocity. The red star indicates the hypocenter. All STFs are plotted at the same scale.}
     \label{fig_dvt_tiles}
 \end{sidewaysfigure}
@@ -323,6 +325,7 @@ A detailed analysis of the small scale inundation pattern produced by the differ
 \end{figure}
 
 \begin{table}
+\centering
 \caption[Forecast statistics for kinematic models]{Forecast statistics of the inversions and inundation models. The first column is variance reduction of the modeled inundation compared to the surveyed inundation from \citet{mori2012}. The 2nd column is the number of inundation survey points inundated by the model}
 \label{tb_results_dvt}
 \begin{tabular}{l c c}

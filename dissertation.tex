@@ -22,6 +22,8 @@
 \makeatother
 %%%%%%%%
 \renewcommand{\bibsection}{\chapter{\bibname}}
+\AtBeginEnvironment{longtable}{\linespread{1}\selectfont}
+\setlength{\LTcapwidth}{\linewidth}
 
 \begin{document}
 \include{frontmatter}

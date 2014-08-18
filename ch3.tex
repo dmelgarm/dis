@@ -150,6 +150,7 @@ The first example of \textit{fast}CMT is for the 2003 Mw 8.3 Tokachi-oki earthqu
 Green's functions were computed from EDGRN on a 1 km horizontal and vertical grid using the four-layer velocity model employed by \citet{Yagi2004} for near source slip inversion (Table \ref{tb_toki_model}). This is a much denser coverage than the actual station distribution, thus, at any given station the resulting GF is the spline interpolation of the closest grid points. For this scenario we used a 3-D 3$^\circ\times$3$^\circ$ prism of gridpoints spaced at 0.2$^\circ$ and every 3km in depth between 3 and 60km centered around the mean latitude and longitude of the first stations to meet a detection criterion.
 
 \begin{table}
+\centering
 \caption{Velocity model for the Tokachi-oki inversion}
 \label{tb_toki_model}
 \begin{tabular}{l r r r r}
@@ -207,6 +208,7 @@ Displacements at a 1Hz sampling rate were estimated in a simulated real-time mod
 The seismic velocity model used in the inversion is obtained from a simplification of the California Community Velocity Model version 4 (CVM4) \citep{kohler2003}. The structure in this zone is highly heterogeneous so our model is an average of the grid with corners (117$^\circ$W, 32$^\circ$N) and (115$^\circ$W, 34$^\circ$N). We assume a constant Moho depth, which is taken as the mean value inside the grid.  We define 4 layers between the Moho and the free surface, and assume a half space below the Moho (Table \ref{tb_elmay_model}). The GFs for this model are computed at 1 km horizontal and vertical intervals with EDGRN and as before, at a particular station the GF is the result of the spline interpolation of the closest grid points.
 
 \begin{table}
+\centering
 \caption{Velocity model for the El Mayor-Cucapah inversion}
 \label{tb_elmay_model}
 \begin{tabular}{l r r r r}
@@ -276,6 +278,7 @@ We have shown that the final CMT solution is quickly obtained after the end of t
 As evidenced by Figure \ref{fig_toki_stdiprake} and \ref{fig_elmay_stdiprake} there is still a considerable amount of scatter in the MT solutions so taking data from a single epoch is not desirable and more averaging is necessary. Thus the \textit{fast}CMT algorithm waits (a somewhat arbitrary) 20 seconds after $t_1$. At $t_2=t_1+20$, the displacements of the three directions of motion are averaged, in between $t_1$ and $t_2$, for all stations over the 15 mm threshold, and at that point the inversion procedure begins. Assuming negligible computation times, $t_2$ is also the time at which a final solution is available. Figures \ref{fig_final_inversion}a and \ref{fig_final_inversion}e show the maximum displacement and its corresponding variance function for the Tokachi-oki and El Mayor-Cucapah events; Figures \ref{fig_final_inversion}b through \ref{fig_final_inversion}d and \ref{fig_final_inversion}f through \ref{fig_final_inversion}h show the computed final offsets compared to the original time series for all 3 directions of motion for both events. Figures \ref{fig_toki_final} and \ref{fig_elmay_final} show the final CMT solutions for the Tokachi-oki and El Mayor-Cucapah events, respectively, and compare them to the GCMT solution in the Tokachi-oki case and the W phase solution in the El Mayor-Cucapah case. In addition, Table \ref{tb_summary_times} summarizes the times at which different milestones are reached for each event.
 		
 \begin{table}
+\centering
 \caption{Summary timeline of results for the Tokachi-oki and El Mayor-Cucapah events}
 \label{tb_summary_times}
 \begin{tabular}{l c c}
